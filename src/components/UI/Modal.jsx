@@ -1,9 +1,11 @@
 import React from 'react';
 import item from '../../assets/data/portfolioData';
 
-const Modal = ({setShowModal,activeID}) => {
 
+const Modal = ({setShowModal,activeID}) => {
+    
     const  portfolio =item.find((item)=>item.id === activeID)
+    // console.log(portfolio)
         // Handle the case where portfolio is not found
     if (!portfolio) {
         return (
@@ -31,7 +33,28 @@ const Modal = ({setShowModal,activeID}) => {
                 <div>
                     <h2 className='text-2xl text-indigo-950 font-[700] my-5'>{portfolio.title}</h2>
                     <p className='text-[15px] leading-7 text-blue-950'>{portfolio.description}</p>
+
+                    <div className='mt-5 flex items-center gap-3 flex-wrap'>
+                        <h4 className='text-indigo-950 text-[18px] text-[600]'>Technologies :</h4>
+
+                        {portfolio?.technologies.map((tech,index)=>{
+                            return(
+                                <span key={index} className='bg-gray-200 px-2 rounded-[5px] block text-[14px] leading-0.5'>
+                                {tech}
+                              
+                            </span>
+                            )
+                        })}
+                    </div>
+                
+                <a href='#'>
+                    <button className='bg-purple-500 text-white py-2 px-4 my-8 rounded-[8px] font-[500]
+                    hover:bg-indigo-950 ease-in-duration-300'>Live Site</button>
+                </a>
                 </div>
+
+            <button onClick={()=> setShowModal(false)}className='w-[1.8rem] h-[1.8rem] bg-[white] absolute top-[1.7rem] right-[1.7rem] text-[25px]
+            flex itmes-center justify-center rounded-[3px] leading-0 cursor-pointer'>X</button>
             </div>
         </div>
     )
@@ -80,6 +103,8 @@ export default Modal
 //         <div>
 //           <h2 className="text-2xl text-indigo-950 font-bold my-5">{portfolio.title}</h2>
 //           <p className="text-[15px] leading-7 text-gray-700">{portfolio.description}</p>
+
+
 //         </div>
 //       </div>
 //     </div>
