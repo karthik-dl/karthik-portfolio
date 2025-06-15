@@ -27,9 +27,9 @@ const Hero = () => {
               <a href="#portfolio" className='text-indigo-950 font-[600] text-[18px] border-b border-solid border-blue-600'>See Portfolio</a>
             </div>
             <p data-aos="fade-left"
-              data-aos-duration="1800" className='flex gap-2 mt-14 text-indigo-950 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
-              Non iste ut eius voluptatem molestias iure odio unde delectus aut nisi,<br/> deleniti a magni sed, 
-              neque culpa natus explicabo saepe animi.
+              data-aos-duration="1800" className='flex gap-2 mt-5 text-indigo-950 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10'>To be associated with an organization which provides challenging work environment 
+              and proving my excellence at every step is my long-term 
+career goal. Highly efficient and passionate for learning new concepts, ideas, techniques.
             </p>
             <div className='flex items-center gap-9 m1-14'>
               <span className='text-blue-400 text-[15px] font-[600]'>Follow Me:</span>

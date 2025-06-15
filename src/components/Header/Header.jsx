@@ -10,7 +10,7 @@ const Header=()=>{
                     <span className='w-[35px] h-[35px] bg-blue-500 text-white text-[18px] font-[500] rounded-full flex items-center justify-center'>K</span>
                     {/* <span className="bg-yellow-300 text-red">hello</span> */}
                     <div className="leading-[20px]">
-                        <h2 className="text-xl text-blue-500 font-[800]">Karthik</h2>
+                        <h2 className="text-xl text-blue-500 font-[800]">Karthik D L</h2>
                         <p className="text-blue-400 text-[15px] font-[500]">Personal</p>
                     </div>
                 </div>
@@ -29,10 +29,9 @@ const Header=()=>{
 
                 {/* menu right */}
                 <div className="flex items-center gap-4">
-                    <button className='flex items-center  gap-2 text-blue-400 font-[600] border border-solid border-blue-400 py-2 px-4 rounded-[5px] mx-h-[18px]  h-[35px] w-[100px]
+                    <button className='flex items-center  gap-2 text-blue-400 font-[600] border border-solid border-blue-400 py-2 px-4 rounded-[5px] mx-h-[18px]  h-[35px] w-[130px]
                     hover:bg-blue-400 hover:text-white hover:font-[500] ease-in duration-700'>
-                    <FiSend />
-                        Let's Talk
+                    <FiSend />Let's Talk
                     </button>
 
                     {/* <span className="text-2xl text-blue-400 md:hidden cursor-pointer">
